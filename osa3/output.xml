@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.1 on darwin)" generated="20241119 14:32:44.908" rpa="false" schemaversion="4">
+<suite id="s1" name="Register" source="/Users/juuso/Koulu/Ohjelmointi/Ohjelmistotuotanto24/ohtu_Syksy24/osa3/login-robot/src/tests/register.robot">
+<test id="s1-t1" name="Register With Enough Long But Invalid Username And Valid Password" line="18">
+<kw name="Input New Command And Create User" type="SETUP">
+<kw name="Input New Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20241119 14:32:44.925" endtime="20241119 14:32:44.925"/>
+</kw>
+<status status="PASS" starttime="20241119 14:32:44.925" endtime="20241119 14:32:44.925"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle12345</arg>
+<status status="PASS" starttime="20241119 14:32:44.925" endtime="20241119 14:32:44.925"/>
+</kw>
+<status status="PASS" starttime="20241119 14:32:44.925" endtime="20241119 14:32:44.926"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>usSer!@#</arg>
+<arg>validpassword123</arg>
+<kw name="Input" library="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" starttime="20241119 14:32:44.926" endtime="20241119 14:32:44.926"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" starttime="20241119 14:32:44.926" endtime="20241119 14:32:44.926"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20241119 14:32:44.926" endtime="20241119 14:32:44.927"/>
+</kw>
+<status status="PASS" starttime="20241119 14:32:44.926" endtime="20241119 14:32:44.927"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Username must contain only lowercase letters</arg>
+<status status="PASS" starttime="20241119 14:32:44.927" endtime="20241119 14:32:44.927"/>
+</kw>
+<status status="PASS" starttime="20241119 14:32:44.924" endtime="20241119 14:32:44.927"/>
+</test>
+<status status="PASS" starttime="20241119 14:32:44.910" endtime="20241119 14:32:44.928"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
